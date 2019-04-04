@@ -1,6 +1,6 @@
-import Base from '@core/Entity';
-import Scene from '@common/core/Scene';
-import Hierarchy from '@common/components/Hierarchy';
+import Base from '@fizz6/strife/src/Entity';
+import Scene from './Scene';
+import Hierarchy from '../components/Hierarchy';
 
 export default class Entity extends Base<Entity> {
     

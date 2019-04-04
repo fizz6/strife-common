@@ -1,5 +1,6 @@
-import Component from '@common/core/Component';
-import Entity from '@common/core/Entity';
+import { Optional } from '@fizz6/strife/src/Optional';
+import Component from '../core/Component';
+import Entity from '../core/Entity';
 
 @Component.Register
 export default class Hierarchy extends Component {

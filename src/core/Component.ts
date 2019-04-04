@@ -1,5 +1,5 @@
-import Base, { Constructor as BaseConstructor } from '@core/Component';
-import Entity from '@common/core/Entity';
+import Base, { Constructor as BaseConstructor } from '@fizz6/strife/src/Component';
+import Entity from './Entity';
 
 export type Constructor<ComponentType extends Component> = new (entity: Entity) => ComponentType;
 

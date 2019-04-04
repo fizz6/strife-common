@@ -1,0 +1,26 @@
+{
+  "name": "@fizz6/strife-common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fizz6/strife-common.git"
+  },
+  "author": "Jake Chrumka <chrumka.mj@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fizz6/strife-common/issues"
+  },
+  "homepage": "https://github.com/fizz6/strife-common#readme",
+  "dependencies": {
+    "@fizz6/strife": "^1.0.2",
+    "three": "^0.103.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.1"
+  }
+}
