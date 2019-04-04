@@ -7,7 +7,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const Component_1 = require("../core/Component");
+const three_1 = require("three");
 let Transform = class Transform extends Component_1.default {
+    constructor() {
+        super(...arguments);
+        this.matrix = three_1.Matrix4.Identity;
+    }
+    get position() {
+        return matrix;
+    }
 };
 Transform = __decorate([
     Component_1.default.Register

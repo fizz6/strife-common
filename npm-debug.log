@@ -1,0 +1,111 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ec2-user/.nvm/versions/node/v6.15.1/bin/node',
+1 verbose cli   '/home/ec2-user/.nvm/versions/node/v6.15.1/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access',
+1 verbose cli   'public' ]
+2 info using npm@3.10.10
+3 info using node@v6.15.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ec2-user/environment/common',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ec2-user/.npm correctMkdir not in flight; initializing
+10 info lifecycle @fizz6/strife-common@1.0.0~prepublish: @fizz6/strife-common@1.0.0
+11 silly lifecycle @fizz6/strife-common@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package.tgz',
+12 verbose tar pack   '/home/ec2-user/environment/common' ]
+13 verbose tarball /home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package.tgz
+14 verbose folder /home/ec2-user/environment/common
+15 verbose addLocalTarball adding from inside cache /home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package.tgz
+16 verbose correctMkdir /home/ec2-user/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @fizz6/strife-common@1.0.0
+18 verbose afterAdd /home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ec2-user/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package/package.json written
+21 silly publish { name: '@fizz6/strife-common',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/fizz6/strife-common.git' },
+21 silly publish   author: { name: 'Jake Chrumka', email: 'chrumka.mj@gmail.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/fizz6/strife-common/issues' },
+21 silly publish   homepage: 'https://github.com/fizz6/strife-common#readme',
+21 silly publish   dependencies: { '@fizz6/strife': '^1.0.2', three: '^0.103.0' },
+21 silly publish   devDependencies: { typescript: '^3.4.1' },
+21 silly publish   readme: '# Strife — Common\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '1b167193815f4b272120cef5992c36119a70c9b1',
+21 silly publish   _id: '@fizz6/strife-common@1.0.0',
+21 silly publish   _shasum: 'e23687679413398743f1df67b8be0e91cef3a38d',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @fizz6/strife-common
+24 silly mapToRegistry scope (from package name) @fizz6
+25 verbose mapToRegistry no registry URL found in name for scope @fizz6
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@fizz6/strife-common',
+28 silly mapToRegistry   scope: '@fizz6',
+28 silly mapToRegistry   escapedName: '@fizz6%2fstrife-common',
+28 silly mapToRegistry   name: '@fizz6/strife-common',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@fizz6%2fstrife-common
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /home/ec2-user/.npm/@fizz6/strife-common/1.0.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@fizz6%2fstrife-common
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 10:59:37 PM
+35 verbose request using bearer token for auth
+36 verbose request id bec41351e494d2ae
+37 http request PUT https://registry.npmjs.org/@fizz6%2fstrife-common
+38 http 403 https://registry.npmjs.org/@fizz6%2fstrife-common
+39 verbose headers { date: 'Thu, 04 Apr 2019 22:59:37 GMT',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'transfer-encoding': 'chunked',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'set-cookie': [ '__cfduid=dd0b67a94954ea1d4a68b0285460de51e1554418777; expires=Fri, 03-Apr-20 22:59:37 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+39 verbose headers   'cf-ray': '4c26e4cf6c342a19-SEA',
+39 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+39 verbose headers   vary: 'Accept-Encoding',
+39 verbose headers   server: 'cloudflare',
+39 verbose headers   'content-encoding': 'gzip' }
+40 verbose request invalidating /home/ec2-user/.npm/registry.npmjs.org/_40fizz6_252fstrife-common on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: You cannot publish over the previously published versions: 1.0.0. : @fizz6/strife-common
+42 verbose stack     at makeError (/home/ec2-user/.nvm/versions/node/v6.15.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/home/ec2-user/.nvm/versions/node/v6.15.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at /home/ec2-user/.nvm/versions/node/v6.15.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:216:7
+42 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+42 verbose stack     at emitNone (events.js:91:20)
+42 verbose stack     at Gunzip.emit (events.js:185:7)
+42 verbose stack     at endReadableNT (_stream_readable.js:978:12)
+42 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:80:11)
+42 verbose stack     at process._tickCallback (internal/process/next_tick.js:104:9)
+43 verbose statusCode 403
+44 verbose pkgid @fizz6/strife-common
+45 verbose cwd /home/ec2-user/environment/common
+46 error Linux 4.14.88-72.76.amzn1.x86_64
+47 error argv "/home/ec2-user/.nvm/versions/node/v6.15.1/bin/node" "/home/ec2-user/.nvm/versions/node/v6.15.1/bin/npm" "publish" "--access" "public"
+48 error node v6.15.1
+49 error npm  v3.10.10
+50 error code E403
+51 error You cannot publish over the previously published versions: 1.0.0. : @fizz6/strife-common
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
