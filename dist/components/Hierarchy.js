@@ -19,9 +19,9 @@ let Hierarchy = class Hierarchy extends Component_1.default {
         if (this.m_parent == parent)
             return;
         if (parent)
-            parent.hierarchy.children.push(this.entity);
+            parent.Hierarchy.children.push(this.Entity);
         if (this.m_parent)
-            this.m_parent.hierarchy.m_children.splice(this.m_parent.hierarchy.m_children.indexOf(this.entity));
+            this.m_parent.Hierarchy.m_children.splice(this.m_parent.Hierarchy.m_children.indexOf(this.Entity));
         this.m_parent = parent;
     }
     get children() {

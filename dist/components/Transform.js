@@ -11,10 +11,19 @@ const three_1 = require("three");
 let Transform = class Transform extends Component_1.default {
     constructor() {
         super(...arguments);
-        this.matrix = three_1.Matrix4.Identity;
+        this.matrix = new three_1.Matrix4();
     }
     get position() {
-        return matrix;
+        const position = new three_1.Vector3();
+        this.matrix.decompose(position);
+        return position;
+    }
+    set position(position) {
+        this.matrix.setPosition(position);
+    }
+    translate(translation) {
+        const translationMatrix = new three_1.Matrix4().makeTranslation(translation.x, translation.y, translation.z);
+        this.matrix.multiply(translationMatrix);
     }
 };
 Transform = __decorate([

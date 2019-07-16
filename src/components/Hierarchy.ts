@@ -5,20 +5,23 @@ import Entity from '../core/Entity';
 @Component.Register
 export default class Hierarchy extends Component {
     
-    public get parent(): Optional<Entity> {
-        return this.m_parent;
-    }
-    public set parent(parent: Optional<Entity>) {
-        if (this.m_parent == parent) return;
-        if (parent) parent.hierarchy.children.push(this.entity);
-        if (this.m_parent) this.m_parent.hierarchy.m_children.splice(this.m_parent.hierarchy.m_children.indexOf(this.entity));
-        this.m_parent = parent;
-    }
-    private m_parent?: Entity;
+    private parent?: Entity;
     
-    public get children(): Entity[] {
-        return this.m_children;
+    public get Parent(): Optional<Entity> {
+        return this.parent;
     }
-    private m_children: Entity[] = [];
+    
+    public set Parent(parent: Optional<Entity>) {
+        if (this.parent == parent) return;
+        if (parent) parent.Hierarchy.children.push(this.Entity);
+        if (this.parent) this.parent.Hierarchy.children.splice(this.parent.Hierarchy.children.indexOf(this.Entity));
+        this.parent = parent;
+    }
+    
+    private children: Entity[] = [];
+    
+    public get Children(): Entity[] {
+        return this.children;
+    }
     
 }
