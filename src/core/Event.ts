@@ -1,4 +1,4 @@
 import Base from '@fizz6/strife/src/Event';
-import Entity from './Entity';
+import { Entity } from './Entity';
 
-export default class Event extends Base<Entity> {}
+export class Event extends Base<Entity> {}

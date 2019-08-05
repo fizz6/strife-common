@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/fizz6/strife-common#readme",
   "dependencies": {
-    "@fizz6/strife": "^1.0.2",
+    "@fizz6/strife": "^1.1.3",
+    "@types/uuid": "^3.4.5",
     "three": "^0.103.0"
   },
   "devDependencies": {
     "typescript": "^3.5.3"
-  }
+  },
+  "types": "index.ts"
 }
